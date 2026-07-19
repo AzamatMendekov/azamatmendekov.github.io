@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dementor Games</title>
+<meta name="description" content="Dementor Games — Kyrgyzstan. Creator of Tactical Combat, a turn-based tactical horror game for Android.">
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#15181d; --line:#242a33;
+    --text:#d8dde5; --dim:#8a93a1; --accent:#c0392b; --accent2:#e74c3c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  .wrap{max-width:760px; width:100%; margin:0 auto; padding:0 20px}
+
+  header{padding:64px 0 40px; text-align:center;
+    background:
+      radial-gradient(ellipse at 50% -20%, rgba(192,57,43,.18), transparent 60%);
+  }
+  .logo{
+    font-size:34px; font-weight:800; letter-spacing:.06em; text-transform:uppercase;
+  }
+  .logo span{color:var(--accent2)}
+  .tagline{color:var(--dim); margin-top:10px; font-size:15px}
+
+  main{flex:1; padding:8px 0 56px}
+  h2{font-size:13px; letter-spacing:.18em; text-transform:uppercase;
+     color:var(--dim); margin:36px 0 14px}
+
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:26px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;
+  }
+  .thumb{
+    width:84px; height:84px; border-radius:18px; flex:0 0 auto;
+    background:linear-gradient(145deg,#1b1f26,#0f1216);
+    border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    font-size:38px;
+  }
+  .info{flex:1; min-width:240px}
+  .info h3{font-size:22px; margin-bottom:6px}
+  .badge{
+    display:inline-block; font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent2); border:1px solid var(--accent); border-radius:999px;
+    padding:3px 10px; margin-bottom:10px;
+  }
+  .info p{color:var(--dim); font-size:15px}
+  .actions{margin-top:16px; display:flex; gap:12px; flex-wrap:wrap}
+  .btn{
+    display:inline-block; text-decoration:none; font-weight:600; font-size:14px;
+    padding:10px 18px; border-radius:10px; transition:.15s;
+  }
+  .btn-primary{background:var(--accent); color:#fff}
+  .btn-primary:hover{background:var(--accent2)}
+  .btn-ghost{border:1px solid var(--line); color:var(--text)}
+  .btn-ghost:hover{border-color:var(--dim)}
+  .soon{font-size:13px; color:var(--dim); align-self:center}
+
+  footer{
+    border-top:1px solid var(--line); padding:22px 0 30px; text-align:center;
+    color:var(--dim); font-size:13px;
+  }
+  footer a{color:var(--dim)}
+  footer a:hover{color:var(--text)}
+  .foot-links{margin-bottom:8px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Dementor <span>Games</span></div>
+    <p class="tagline">Kyrgyzstan</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2>Our Games</h2>
+
+    <div class="card">
+      <div class="thumb">🎯</div>
+      <div class="info">
+        <span class="badge">Turn-based · Tactics · Horror</span>
+        <h3>Tactical Combat</h3>
+        <p>Lead your squad room by room through a dark facility. Outsmart hostile agents,
+           the undead — and worse things waiting deeper inside. Turn-based squad combat
+           for Android.</p>
+        <div class="actions">
+          <!-- После релиза замените href на ссылку Google Play и уберите span -->
+          <span class="soon">Coming soon to Google Play</span>
+          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=hI5nAmw0K2g" target="_blank" rel="noopener">Watch trailer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:azadementorkg@gmail.com">Contact</a>
+    </div>
+    © 2026 Dementor Games
+  </div>
+</footer>
+
+</body>
+</html>
